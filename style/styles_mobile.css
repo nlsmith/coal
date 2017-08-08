@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+	overflow-x:hidden;
+	background-color:#000;
+}
+.mainNav{
+	display:none;
+}
+
+#header{
+	width:100%;
+	height:36px;
+	background-color:black;
+}
+#section-0{
+	background:url("../backgrounds/bg-coal.jpg") 50% 0 no-repeat fixed;
+	overflow:hidden;
+	height:300px;
+	}
+#section-1{
+	background:url("../backgrounds/bg-coal2.jpg") 50% 0 no-repeat fixed;
+	height:1080px;
+}
+#section-2{
+	background:url("../backgrounds/bg-coal3.jpg") 50% 0 no-repeat fixed;
+	height:1080px;
+}
+#section-2 .image {
+	background:url("../images/plugIn.png") no-repeat;
+	display:block;
+	position: absolute;
+	height:1600px;
+	width:1600px;
+}
+#section-3 {
+
+}
+#section-4 {
+	background:url("../backgrounds/bg-coal4.jpg") 50% 0 no-repeat fixed;
+	height:1080px;
+}
+#section-5 {
+	background:url("../backgrounds/bg-coal.jpg") 50% 0 no-repeat fixed;
+	overflow:hidden;
+	color:white;
+	height:1280px;
+}
+#section-6 {
+	background:url("../backgrounds/bg-coal2.jpg") 50% 0 no-repeat fixed;
+	overflow:hidden;
+	color:white;
+	height:1080px;
+}
+#section-7{
+	background:url("../backgrounds/bg-powerlines1-1920.jpg") 50% 0 no-repeat fixed;
+	height:1080px;
+}
+#section-8 {
+	background:url("../backgrounds/posterframes/chicago/luisfull.jpg") 50% 0 no-repeat fixed;
+	overflow:hidden;
+	color:white;
+	height:1080px;
+}
+#section-9 {
+	background:url("../backgrounds/posterframes/appalachia/goose.jpg") 50% 0 no-repeat fixed;
+	height:1080px;
+}
+#section-10 {
+	background:url("../backgrounds/posterframes/appalachia/swimmingpool.jpg") 50% 0 no-repeat fixed;
+	overflow:hidden;
+	color:white;
+	height:1080px;
+}
+#section-11 {
+	background:url("../backgrounds/posterframes/appalachia/dusk.jpg") 50% 0 no-repeat fixed;
+	height:1080px;
+}
+#section-12 {
+	background:url("../backgrounds/posterframes/appalachia/miner.jpg") 50% 0 no-repeat fixed;
+	overflow:hidden;
+	color:white;
+	height:1080px;
+}
+#section-13 {
+	background:url("../backgrounds/posterframes/appalachia/trains.jpg") 50% 0 no-repeat fixed;
+	height:1080px;
+}
+#section-14 {
+	background:url("../backgrounds/posterframes/appalachia/silhouette.jpg") 50% 0 no-repeat fixed;
+	overflow:hidden;
+	color:white;
+	height:1080px;
+}
+#section-15 {
+	background:url("../backgrounds/posterframes/appalachia/working.jpg") 50% 0 no-repeat fixed;
+	height:1080px;
+}
+#section-16 {
+	background:url("../backgrounds/posterframes/appalachia/trains2.jpg") 50% 0 no-repeat fixed;
+	overflow:hidden;
+	color:white;
+	height:1080px;
+}
+.content{
+	left:0px;
+    height:1500px;
+    width:100%;
+    float:left;
+    text-shadow:1px 1px 2px #f0f0f0;
+    z-index: 4000;
+}
+.primary{
+	width:700px;
+	margin:0px 0px 0px 40px;
+	float:left;
+	overflow:hidden;
+}
+.sidebar{
+	width:280px;
+	overflow:hidden;
+}
+#footer{
+	background-color:#000;
+	width:100%;
+}
+.contentTag {
+	cursor: pointer;
+}

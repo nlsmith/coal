@@ -1,0 +1,286 @@
+/**{
+    margin:0;
+    padding:0;
+}
+html{
+	overflow-x:hidden;
+}
+.mainNav{
+	float: left;
+	position: fixed;
+	top:200px;
+	z-index:5001;
+}
+.mainNav ul {
+	list-style:none;
+}
+.mainNav ul li a, .mainNav ul li a:active, .mainNav ul li a:visited{
+	display:block;
+	float:left;
+	width:20px;
+	height:20px;
+	outline: 1px #000 solid;
+	background-color:#E6E7E8;
+	margin:5px 15px 5px 15px;
+	cursor:pointer;
+	list-style:none;
+	overflow: hidden;
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: none;
+	}
+.mainNav ul li span{
+	position:absolute;
+	width: 62px;
+	height: 20px;
+	display: none;
+	text-align: center;
+	padding: 5px;
+	left: 50px;
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: none;
+	}
+.mainNav ul li span li{
+	display: block;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	position: relative;
+}
+.navLeft {
+	border:0px;
+	width: 8px;
+}
+.navText{
+	background-color: #BCBEC0;
+	width: auto;
+	height:20px;
+	margin:0px;
+	padding:0px;
+	outline: none;
+}
+.navRight {
+	border:0px;
+	width: 1px;
+}
+.mainNav ul li.active a{
+	background-color:#F4A125;
+}
+.mainNav ul li a img {
+   border: 0;
+}
+.logo {
+	position: fixed;
+	z-index:10000;
+	bottom:0px;
+	left:0px;
+	height:75px;
+	width:150px;
+	opacity:0.4;
+	filter:alpha(opacity=40)
+}
+#header{
+	width:100%;
+	height:50px;
+	background-color:black;
+}
+#home{
+	background:url("../backgrounds/bg-coal.jpg") 50% 0 no-repeat fixed;
+	overflow:hidden;
+	height:750px;
+	}
+#section1{
+	background:url("../backgrounds/bg-powerlines1-1920.jpg") 50% 0 no-repeat fixed;
+}
+#section2{
+	background:url("../backgrounds/blackbg-1920.png") 50% 0 fixed;
+}
+#section2 .image {
+	background:url("../images/plugIn.png") no-repeat;
+	display:block;
+	position: absolute;
+	left: 500px;
+	height:1600px;
+	width:1600px;
+}
+#section3{
+	background:url("../backgrounds/bg-powerlines1-1920.jpg") 50% 0 no-repeat fixed;
+}
+#end {
+	background:url("../backgrounds/blackbg-1920.png") 50% 0 repeat fixed;
+	overflow:hidden;
+	color:white;
+	height:750px;
+}
+.content{
+	left:0px;
+    height:1500px;
+    width:100%;
+    float:left;
+    text-shadow:1px 1px 2px #f0f0f0;
+    z-index: 4000;
+}
+.primary{
+	width:700px;
+	margin:0px 0px 0px 40px;
+	float:left;
+	overflow:hidden;
+}
+.sidebar{
+	width:280px;
+	overflow:hidden;
+}
+#footer{
+	background-color:#000;
+	width:100%;
+}
+/*.slideOutTip{
+	/* The main wrapping div of the slideout tips 
+	position:absolute;
+	padding:3px;
+	top:0;
+	left:0;
+	background-color:#111;
+	font-size:13px;
+	color:white;
+	overflow:hidden;
+	height:22px;
+}
+
+.slideOutTip:hover{
+	/* Applying a CSS3 outer glow on hover 
+	-moz-box-shadow:0 0 1px #999;
+	-webkit-box-shadow:0 0 1px #999;
+	box-shadow:0 0 1px #999;
+}
+
+/* The holder for the title and the icon:
+.tipVisible{ cursor:pointer; height:22px; }
+
+.tipTitle{
+	float:left;
+	font-family:'Myriad Pro',Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	white-space:nowrap;
+	line-height:22px;
+	padding-right:5px;
+}
+
+.tipIcon{
+	width:20px;
+	height:20px;
+	float:left;
+	background-color:#61b035;
+	border:1px solid #70c244;
+	margin-right:8px;
+
+	/* CSS3 Rounded corners 
+
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+}
+/* Three color themes 
+.green .tipIcon{ background-color:#61b035; border:1px solid #70c244; }
+.blue .tipIcon{ background-color:#1078C7; border:1px solid #1e82cd; }
+.red .tipIcon{ background-color:#CD3A12; border:1px solid #da421a; }
+
+.plusIcon{
+	/* The plus icon 
+	width:13px;
+	height:13px;
+	background:url('img/plus.gif') no-repeat center center;
+	margin:4px;
+
+	/* Defining a CSS3 animation. Currently only works in Chrome and Safari 
+	-webkit-transition: -webkit-transform 0.2s linear;
+	-moz-transition: -moz-transform 0.2s linear;
+	transition: transform 0.2s linear;
+}
+
+.slideOutTip.isOpened{ z-index:10000; }
+
+.slideOutTip.isOpened .plusIcon{
+	/* Applying a CSS3 rotation  to the opened slideouts
+	-moz-transform:rotate(45deg);
+	-webkit-transform:rotate(45deg);
+	transform:rotate(45deg);
+}
+
+/* Special rules for the left and top - opening versions 
+
+.openLeft .tipIcon{
+	/* Floating the title and the icon to the right 
+	margin:0 0 0 8px;
+	float:right;
+}
+.openLeft .tipTitle{ float:right; padding:0 0 0 5px; }
+.openLeft .slideOutContent{ margin-top:22px; }
+.openLeft.openTop .slideOutContent{	margin-top:0; }
+
+.slideOutContent{
+	/* Hiding the div with the slide out content: 
+	display:none;
+	padding:10px;
+	font-size:11px;
+}
+
+/* Hiding the original paragraphs if they have not been replaced (JS disabled): 
+
+.main > p{ display:none; }*/
+				.button {
+					cursor: pointer;
+					background-color: black;
+					color: white;
+					width: 300px;
+					height: 30px;
+					z-index: 50;
+				}
+
+				.content {
+					background-color: red;
+					display: block;
+					height: 1020px;
+					width: 0px;
+					float: left;
+				}
+				
+				.sidecontentpullout {
+                        background-color: Black;
+                        color: White;
+                        position: fixed;
+                        top: 400px;
+                        left: 400px;
+                        padding: 4px 3px;
+                }
+                
+                .sidecontentpullout:hover {
+                        background-color: #444444;
+                        color: White;
+                }
+                
+                .sidecontent {
+                        background-color: Black;
+                        color: White;
+                        -moz-border-radius-bottomleft: 1em;
+                        -webkit-border-bottom-left-radius: 1em;
+                        border-bottom-left-radius: 1em;
+                        /*background: rgba(64, 64, 64, 0.5); /* R, G, B, A */
+                        /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f404040, endColorstr=#7f404040); /* AA, RR, GG, BB */
+
+                }
+                
+                .sidecontent > div > div {
+                        padding-left: 10px;
+                        padding-right: 40px;
+                }
+
+                .inside {
+                	display:block;
+                	width:100%
+                	height:100%
+                	background-color: #000000;
+                	opacity: 5.0;
+                }
